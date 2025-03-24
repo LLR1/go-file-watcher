@@ -1,0 +1,6 @@
+2025/03/24 15:42:31 Event: CREATE        "tasks.log"
+2025/03/24 15:42:53 Event: CREATE        "test.txt"
+2025/03/24 15:42:53 Event: WRITE         "test.txt"
+2025/03/24 15:43:07 Event: WRITE         "test.txt"
+2025/03/24 15:43:12 Event: REMOVE        "test.txt"
+2025/03/24 15:43:19 Event: WRITE         "tasks.log"
