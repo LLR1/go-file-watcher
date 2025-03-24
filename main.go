@@ -13,6 +13,17 @@ import (
 func main() {
 	// Read directory path from flag, default = current directory
 	dir := flag.String("path", ".", "Directory to watch")
+
+	flag.Usage = func() {
+		fmt.Println("Go File Watcher — A CLI tool to monitor file changes")
+		fmt.Println()
+		fmt.Println("Usage:")
+		fmt.Println("  file-watcher [flags]")
+		fmt.Println()
+		fmt.Println("Flags:")
+		fmt.Println("  -path <dir>   Directory to watch (default: current dir)")
+		fmt.Println("  -help         Show this help message")
+	}
 	flag.Parse()
 
 	// Create watcher
